@@ -7,7 +7,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="20dp">
 
         <TextView
             android:layout_width="match_parent"
@@ -96,8 +97,7 @@
             app:pressedGradientEndColor="@android:color/holo_blue_dark"
             app:pressedGradientOrientation="TOP_BOTTOM"
             app:pressedGradientStartColor="@android:color/holo_green_dark"
-            app:pressedRadius="10dp"
-            />
+            app:pressedRadius="10dp" />
     </LinearLayout>
 
 </ScrollView>
