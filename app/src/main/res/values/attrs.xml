@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SupperButton">
+        <!-- normal-->
+        <!-- 文字颜色 -->
+        <attr name="normalTextColor" format="color" />
+        <!-- drawable -->
+        <attr name="normalSolidColor" format="color" />
+        <attr name="normalStrokeColor" format="color" />
+        <attr name="normalStrokeWidth" format="dimension" />
+        <attr name="normalStrokeDashWidth" format="dimension" />
+        <attr name="normalStrokeDashGap" format="dimension" />
+        <attr name="normalRadius" format="dimension" />
+        <attr name="normalTopLeftRadius" format="dimension" />
+        <attr name="normalTopRightRadius" format="dimension" />
+        <attr name="normalBottomLeftRadius" format="dimension" />
+        <attr name="normalBottomRightRadius" format="dimension" />
+        <attr name="normalGradientStartColor" format="color" />
+        <attr name="normalGradientEndColor" format="color" />
+        <attr name="normalGradientCenterColor" format="color" />
+        <attr name="normalGradientUseLevel" format="boolean" />
+        <attr name="normalGradientAngle" format="dimension" />
+        <attr name="normalGradientRadius" format="dimension" />
+        <attr name="normalGradientOrientation">
+            <enum name="BL_TR" value="0" />
+            <enum name="BOTTOM_TOP" value="1" />
+            <enum name="BR_TL" value="2" />
+            <enum name="LEFT_RIGHT" value="3" />
+            <enum name="RIGHT_LEFT" value="4" />
+            <enum name="TL_BR" value="5" />
+            <enum name="TOP_BOTTOM" value="6" />
+            <enum name="TR_BL" value="7" />
+        </attr>
+        <attr name="normalShapeType">
+            <enum name="LINEAR_GRADIENT" value="0" />
+            <enum name="OVAL" value="1" />
+            <enum name="LINE" value="2" />
+            <enum name="RING" value="3" />
+        </attr>
+        <attr name="normalGradientType">
+            <enum name="linear" value="0" />
+            <enum name="radial" value="1" />
+            <enum name="sweep" value="2" />
+        </attr>
+
+        <!-- pressed -->
+        <!-- 按下态是normal透明效果，透明度设定 -->
+        <attr name="pressedAlpha" format="float" />
+        <!-- 文字颜色 -->
+        <attr name="pressedTextColor" format="color" />
+        <!-- drawable -->
+        <attr name="pressedSolidColor" format="color" />
+        <attr name="pressedStrokeColor" format="color" />
+        <attr name="pressedStrokeWidth" format="dimension" />
+        <attr name="pressedStrokeDashWidth" format="dimension" />
+        <attr name="pressedStrokeDashGap" format="dimension" />
+        <attr name="pressedRadius" format="dimension" />
+        <attr name="pressedTopLeftRadius" format="dimension" />
+        <attr name="pressedTopRightRadius" format="dimension" />
+        <attr name="pressedBottomLeftRadius" format="dimension" />
+        <attr name="pressedBottomRightRadius" format="dimension" />
+        <attr name="pressedGradientStartColor" format="color" />
+        <attr name="pressedGradientEndColor" format="color" />
+        <attr name="pressedGradientCenterColor" format="color" />
+        <attr name="pressedGradientUseLevel" format="boolean" />
+        <attr name="pressedGradientAngle" format="dimension" />
+        <attr name="pressedGradientRadius" format="dimension" />
+        <attr name="pressedGradientOrientation">
+            <enum name="BL_TR" value="0" />
+            <enum name="BOTTOM_TOP" value="1" />
+            <enum name="BR_TL" value="2" />
+            <enum name="LEFT_RIGHT" value="3" />
+            <enum name="RIGHT_LEFT" value="4" />
+            <enum name="TL_BR" value="5" />
+            <enum name="TOP_BOTTOM" value="6" />
+            <enum name="TR_BL" value="7" />
+        </attr>
+        <attr name="pressedShapeType">
+            <enum name="LINEAR_GRADIENT" value="0" />
+            <enum name="OVAL" value="1" />
+            <enum name="LINE" value="2" />
+            <enum name="RING" value="3" />
+        </attr>
+        <attr name="pressedGradientType">
+            <enum name="linear" value="0" />
+            <enum name="radial" value="1" />
+            <enum name="sweep" value="2" />
+        </attr>
+        <!-- disable -->
+        <!-- 文字颜色 -->
+        <attr name="disableTextColor" format="color" />
+        <!-- drawable -->
+        <attr name="disableSolidColor" format="color" />
+        <attr name="disableStrokeColor" format="color" />
+        <attr name="disableStrokeWidth" format="dimension" />
+        <attr name="disableStrokeDashWidth" format="dimension" />
+        <attr name="disableStrokeDashGap" format="dimension" />
+        <attr name="disableRadius" format="dimension" />
+        <attr name="disableTopLeftRadius" format="dimension" />
+        <attr name="disableTopRightRadius" format="dimension" />
+        <attr name="disableBottomLeftRadius" format="dimension" />
+        <attr name="disableBottomRightRadius" format="dimension" />
+        <attr name="disableGradientStartColor" format="color" />
+        <attr name="disableGradientEndColor" format="color" />
+        <attr name="disableGradientCenterColor" format="color" />
+        <attr name="disableGradientUseLevel" format="boolean" />
+        <attr name="disableGradientAngle" format="dimension" />
+        <attr name="disableGradientRadius" format="dimension" />
+        <attr name="disableGradientOrientation">
+            <enum name="BL_TR" value="0" />
+            <enum name="BOTTOM_TOP" value="1" />
+            <enum name="BR_TL" value="2" />
+            <enum name="LEFT_RIGHT" value="3" />
+            <enum name="RIGHT_LEFT" value="4" />
+            <enum name="TL_BR" value="5" />
+            <enum name="TOP_BOTTOM" value="6" />
+            <enum name="TR_BL" value="7" />
+        </attr>
+        <attr name="disableShapeType">
+            <enum name="LINEAR_GRADIENT" value="0" />
+            <enum name="OVAL" value="1" />
+            <enum name="LINE" value="2" />
+            <enum name="RING" value="3" />
+        </attr>
+        <attr name="disableGradientType">
+            <enum name="linear" value="0" />
+            <enum name="radial" value="1" />
+            <enum name="sweep" value="2" />
+        </attr>
+
+        <!-- selected -->
+        <!-- 文字颜色 -->
+        <attr name="selectedTextColor" format="color" />
+        <!-- drawable -->
+        <attr name="selectedSolidColor" format="color" />
+        <attr name="selectedStrokeColor" format="color" />
+        <attr name="selectedStrokeWidth" format="dimension" />
+        <attr name="selectedStrokeDashWidth" format="dimension" />
+        <attr name="selectedStrokeDashGap" format="dimension" />
+        <attr name="selectedRadius" format="dimension" />
+        <attr name="selectedTopLeftRadius" format="dimension" />
+        <attr name="selectedTopRightRadius" format="dimension" />
+        <attr name="selectedBottomLeftRadius" format="dimension" />
+        <attr name="selectedBottomRightRadius" format="dimension" />
+        <attr name="selectedGradientStartColor" format="color" />
+        <attr name="selectedGradientEndColor" format="color" />
+        <attr name="selectedGradientCenterColor" format="color" />
+        <attr name="selectedGradientUseLevel" format="boolean" />
+        <attr name="selectedGradientAngle" format="dimension" />
+        <attr name="selectedGradientRadius" format="dimension" />
+        <attr name="selectedGradientOrientation">
+            <enum name="BL_TR" value="0" />
+            <enum name="BOTTOM_TOP" value="1" />
+            <enum name="BR_TL" value="2" />
+            <enum name="LEFT_RIGHT" value="3" />
+            <enum name="RIGHT_LEFT" value="4" />
+            <enum name="TL_BR" value="5" />
+            <enum name="TOP_BOTTOM" value="6" />
+            <enum name="TR_BL" value="7" />
+        </attr>
+        <attr name="selectedShapeType">
+            <enum name="LINEAR_GRADIENT" value="0" />
+            <enum name="OVAL" value="1" />
+            <enum name="LINE" value="2" />
+            <enum name="RING" value="3" />
+        </attr>
+        <attr name="selectedGradientType">
+            <enum name="linear" value="0" />
+            <enum name="radial" value="1" />
+            <enum name="sweep" value="2" />
+        </attr>
+
+    </declare-styleable>
+</resources>
