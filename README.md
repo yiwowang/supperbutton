@@ -53,6 +53,6 @@
 <br>
 <br>
 <br>#ClipLayout 是一个裁剪任何view的布局，例如可以将fresco的gif动画裁剪为圆角矩形
-![Image text](https://raw.githubusercontent.com/yiwowang/supperbutton/master/Screenshots/Screenshot_supper_button.png)
-![Image text](https://raw.githubusercontent.com/yiwowang/supperbutton/master/Screenshots/Screenshot_clip_layout.png)
+<img src="https://raw.githubusercontent.com/yiwowang/supperbutton/master/Screenshots/Screenshot_supper_button.png"/>
+<img src="https://raw.githubusercontent.com/yiwowang/supperbutton/master/Screenshots/Screenshot_clip_layout.png"/>
 <br>有问题和建议可以联系我，QQ:958796636
