@@ -28,7 +28,7 @@ public class GradientDrawableUtils {
     public static int INDEX_SELECTED = 3;
 
 
-    public static int[][] attrs = new int[][]{
+    public final static int[][] SUPPER_BUTTON_ATTARS = new int[][]{
             {
                     R.styleable.SupperButton_normalSolidColor,
                     R.styleable.SupperButton_normalStrokeColor,
@@ -116,6 +116,93 @@ public class GradientDrawableUtils {
 
 
     };
+    public final static int[][] SUPPER_LAYOUT_ATTARS = new int[][]{
+            {
+                    R.styleable.SupperLayout_normalSolidColor,
+                    R.styleable.SupperLayout_normalStrokeColor,
+                    R.styleable.SupperLayout_normalStrokeWidth,
+                    R.styleable.SupperLayout_normalStrokeDashWidth,
+                    R.styleable.SupperLayout_normalStrokeDashGap,
+                    R.styleable.SupperLayout_normalRadius,
+                    R.styleable.SupperLayout_normalTopLeftRadius,
+                    R.styleable.SupperLayout_normalTopRightRadius,
+                    R.styleable.SupperLayout_normalBottomLeftRadius,
+                    R.styleable.SupperLayout_normalBottomRightRadius,
+                    R.styleable.SupperLayout_normalGradientStartColor,
+                    R.styleable.SupperLayout_normalGradientEndColor,
+                    R.styleable.SupperLayout_normalGradientCenterColor,
+                    R.styleable.SupperLayout_normalGradientUseLevel,
+                    R.styleable.SupperLayout_normalGradientAngle,
+                    R.styleable.SupperLayout_normalGradientRadius,
+                    R.styleable.SupperLayout_normalGradientOrientation,
+                    R.styleable.SupperLayout_normalGradientType,
+                    R.styleable.SupperLayout_normalShapeType
+            },
+            {
+                    R.styleable.SupperLayout_pressedSolidColor,
+                    R.styleable.SupperLayout_pressedStrokeColor,
+                    R.styleable.SupperLayout_pressedStrokeWidth,
+                    R.styleable.SupperLayout_pressedStrokeDashWidth,
+                    R.styleable.SupperLayout_pressedStrokeDashGap,
+                    R.styleable.SupperLayout_pressedRadius,
+                    R.styleable.SupperLayout_pressedTopLeftRadius,
+                    R.styleable.SupperLayout_pressedTopRightRadius,
+                    R.styleable.SupperLayout_pressedBottomLeftRadius,
+                    R.styleable.SupperLayout_pressedBottomRightRadius,
+                    R.styleable.SupperLayout_pressedGradientStartColor,
+                    R.styleable.SupperLayout_pressedGradientEndColor,
+                    R.styleable.SupperLayout_pressedGradientCenterColor,
+                    R.styleable.SupperLayout_pressedGradientUseLevel,
+                    R.styleable.SupperLayout_pressedGradientAngle,
+                    R.styleable.SupperLayout_pressedGradientRadius,
+                    R.styleable.SupperLayout_pressedGradientOrientation,
+                    R.styleable.SupperLayout_pressedGradientType,
+                    R.styleable.SupperLayout_pressedShapeType
+            },
+            {
+                    R.styleable.SupperLayout_disableSolidColor,
+                    R.styleable.SupperLayout_disableStrokeColor,
+                    R.styleable.SupperLayout_disableStrokeWidth,
+                    R.styleable.SupperLayout_disableStrokeDashWidth,
+                    R.styleable.SupperLayout_disableStrokeDashGap,
+                    R.styleable.SupperLayout_disableRadius,
+                    R.styleable.SupperLayout_disableTopLeftRadius,
+                    R.styleable.SupperLayout_disableTopRightRadius,
+                    R.styleable.SupperLayout_disableBottomLeftRadius,
+                    R.styleable.SupperLayout_disableBottomRightRadius,
+                    R.styleable.SupperLayout_disableGradientStartColor,
+                    R.styleable.SupperLayout_disableGradientEndColor,
+                    R.styleable.SupperLayout_disableGradientCenterColor,
+                    R.styleable.SupperLayout_disableGradientUseLevel,
+                    R.styleable.SupperLayout_disableGradientAngle,
+                    R.styleable.SupperLayout_disableGradientRadius,
+                    R.styleable.SupperLayout_disableGradientOrientation,
+                    R.styleable.SupperLayout_disableGradientType,
+                    R.styleable.SupperLayout_disableShapeType
+            },
+            {
+                    R.styleable.SupperLayout_selectedSolidColor,
+                    R.styleable.SupperLayout_selectedStrokeColor,
+                    R.styleable.SupperLayout_selectedStrokeWidth,
+                    R.styleable.SupperLayout_selectedStrokeDashWidth,
+                    R.styleable.SupperLayout_selectedStrokeDashGap,
+                    R.styleable.SupperLayout_selectedRadius,
+                    R.styleable.SupperLayout_selectedTopLeftRadius,
+                    R.styleable.SupperLayout_selectedTopRightRadius,
+                    R.styleable.SupperLayout_selectedBottomLeftRadius,
+                    R.styleable.SupperLayout_selectedBottomRightRadius,
+                    R.styleable.SupperLayout_selectedGradientStartColor,
+                    R.styleable.SupperLayout_selectedGradientEndColor,
+                    R.styleable.SupperLayout_selectedGradientCenterColor,
+                    R.styleable.SupperLayout_selectedGradientUseLevel,
+                    R.styleable.SupperLayout_selectedGradientAngle,
+                    R.styleable.SupperLayout_selectedGradientRadius,
+                    R.styleable.SupperLayout_selectedGradientOrientation,
+                    R.styleable.SupperLayout_selectedGradientType,
+                    R.styleable.SupperLayout_selectedShapeType
+            }
+
+    };
 
     /**
      * 创建drawable
@@ -124,7 +211,7 @@ public class GradientDrawableUtils {
      * @param a     自定义view参数
      * @return
      */
-    public static GradientDrawable create(int index, TypedArray a) {
+    public static GradientDrawable create(int index, TypedArray a, int[][] attrs) {
         boolean hasValue = false;
         for (int key : attrs[index]) {
             if (a.hasValue(key)) {

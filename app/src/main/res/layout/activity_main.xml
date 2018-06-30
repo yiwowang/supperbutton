@@ -1,103 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="20dp">
+    <Button
+        android:id="@+id/shape_button_demo_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="进入自定义shape控件演示demo" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="1、图片按钮（按下态调整了透明度）：" />
-
-        <com.yiwowang.superbutton.SupperButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@mipmap/ic_launcher"
-            android:clickable="true"
-            app:pressedAlpha="0.5" />
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="2、文字按钮（按下态调整了透明度）：" />
-
-        <com.yiwowang.superbutton.SupperButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:clickable="true"
-            android:text="我是按钮"
-            android:textColor="@android:color/holo_blue_bright"
-            app:pressedAlpha="0.5" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="3、自定义shape按钮（按下态调整了透明度）：" />
-
-        <com.yiwowang.superbutton.SupperButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:clickable="true"
-            android:gravity="center"
-            android:padding="10dp"
-            android:text="我是按钮"
-            app:normalRadius="10dp"
-            app:normalSolidColor="@android:color/holo_blue_dark"
-            app:normalStrokeColor="@android:color/holo_red_dark"
-            app:normalStrokeWidth="3dp"
-            app:normalTextColor="@android:color/holo_green_light"
-            app:pressedAlpha="0.5" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="4、自定义shape按钮（按下态为新的shape）：" />
-
-        <com.yiwowang.superbutton.SupperButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:clickable="true"
-            android:gravity="center"
-            android:padding="10dp"
-            android:text="我是按钮"
-            app:normalRadius="10dp"
-            app:normalSolidColor="@android:color/holo_blue_dark"
-            app:normalStrokeColor="@android:color/holo_red_dark"
-            app:normalStrokeWidth="3dp"
-            app:normalTextColor="@android:color/white"
-            app:pressedRadius="10dp"
-            app:pressedSolidColor="@android:color/holo_green_light"
-            app:pressedStrokeColor="@android:color/holo_orange_dark"
-            app:pressedStrokeWidth="3dp"
-            app:pressedTextColor="@android:color/black" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="5、自定义shape按钮（按下态为新的shape）：" />
-
-        <com.yiwowang.superbutton.SupperButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:clickable="true"
-            android:gravity="center"
-            android:padding="10dp"
-            android:text="我是按钮"
-            app:normalGradientEndColor="@android:color/holo_green_dark"
-            app:normalGradientOrientation="LEFT_RIGHT"
-            app:normalGradientStartColor="@android:color/holo_blue_dark"
-            app:normalRadius="10dp"
-            app:pressedGradientEndColor="@android:color/holo_blue_dark"
-            app:pressedGradientOrientation="TOP_BOTTOM"
-            app:pressedGradientStartColor="@android:color/holo_green_dark"
-            app:pressedRadius="10dp" />
-    </LinearLayout>
-
-</ScrollView>
+    <Button
+        android:id="@+id/clip_layout_demo_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="进入裁剪布局内容控件演示demo" />
+</LinearLayout>
